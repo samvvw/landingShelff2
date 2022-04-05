@@ -148,7 +148,7 @@ export const FutureFeatureSectionStyle = styled(FutureFeatureSectionComponent)`
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
-    margin-bottom: 14rem;
+    /* margin-bottom: 14rem; */
 
     .future-tag-wrapper {
         display: flex;
