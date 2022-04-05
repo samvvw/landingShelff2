@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import Layout from './components/Layout/Layout'
 import { theme } from './theme/theme'
 import Features from './components/Features/Features'
+import HowItWorks from './components/Features/HowItWorks'
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Header />
                 <Hero />
                 <Features />
+                <HowItWorks />
             </Layout>
         </ThemeProvider>
     )

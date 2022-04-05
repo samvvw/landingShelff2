@@ -4,11 +4,31 @@ const FeaturesComponent = (props) => <div {...props}>{props.children}</div>
 
 export const FeaturesStyle = styled(FeaturesComponent)`
     position: relative;
-
+    margin-top: 3rem;
     .feature-divider {
         position: absolute;
         bottom: -5px;
         z-index: -1;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: ${({ theme }) => theme.layout.tablet}) {
+        .feature-divider {
+            width: 100%;
+            max-height: 59rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: ${({ theme }) => theme.layout.mobile}) {
+        .feature-divider {
+            height: 99rem;
+        }
     }
 `
 //////////////////////////
@@ -138,6 +158,9 @@ export const FutureFeatureSectionStyle = styled(FutureFeatureSectionComponent)`
         .feature-coming-soon {
             font-weight: 400;
         }
+        .feature-tag {
+            white-space: nowrap;
+        }
     }
 
     .feature-text {
@@ -184,6 +207,33 @@ export const FutureFeatureSectionStyle = styled(FutureFeatureSectionComponent)`
         justify-content: center;
         img {
             max-height: 600px;
+        }
+    }
+
+    @media (max-width: ${({ theme }) => theme.layout.tablet}) {
+        flex-direction: column;
+
+        .future-tag-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .feature-text {
+            order: 1;
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                margin-bottom: 4rem;
+            }
+        }
+        p {
+            font-weight: 300;
+        }
+        .feature-image {
+            order: 2;
+            img {
+                width: 100%;
+            }
         }
     }
 `

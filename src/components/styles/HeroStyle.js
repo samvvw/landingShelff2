@@ -9,7 +9,7 @@ const HeroComponent = (props) => (
 
 export const HeroStyle = styled(HeroComponent)`
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 62.63rem;
     display: flex;
     justify-content: center;
