@@ -31,6 +31,7 @@ const WhoWeAre = () => {
                 imageHover={alejandra2}
                 alt={'Alejandra Hernandez'}
                 role={'Developer'}
+                link={'https://www.linkedin.com/in/alerika/'}
             />
             <TeamMemberCard
                 name={'Megumi Takashima'}
@@ -38,6 +39,7 @@ const WhoWeAre = () => {
                 imageHover={megumi2}
                 alt={'Megumi Takashima'}
                 role={'Developer'}
+                link={'https://www.linkedin.com/in/megumi-takashima/'}
             />
             <TeamMemberCard
                 name={'Jose Arteaga'}
@@ -45,6 +47,7 @@ const WhoWeAre = () => {
                 imageHover={jose2}
                 alt={'Jose Arteaga'}
                 role={'Developer'}
+                link={'https://www.linkedin.com/in/jharteaga/'}
             />
             <TeamMemberCard
                 name={'Samuel Villegas'}
@@ -52,6 +55,7 @@ const WhoWeAre = () => {
                 imageHover={samuel2}
                 alt={'Samuel Villegas'}
                 role={'Developer'}
+                link={'https://www.linkedin.com/in/samuelvw/'}
             />
             <TeamMemberCard
                 name={'Lilian Fajardo'}
@@ -59,6 +63,7 @@ const WhoWeAre = () => {
                 imageHover={lilian2}
                 alt={'Lilian Fajardo'}
                 role={'Designer'}
+                link={'https://www.linkedin.com/in/lilfajardo/'}
             />
             <TeamMemberCard
                 name={'Elnaz Behravesh'}
@@ -66,6 +71,7 @@ const WhoWeAre = () => {
                 imageHover={elnaz2}
                 alt={'Elnaz Behravesh'}
                 role={'Designer'}
+                link={'https://www.linkedin.com/in/elnazb/'}
             />
             <TeamMemberCard
                 name={'Tayo Adetola'}
@@ -73,6 +79,7 @@ const WhoWeAre = () => {
                 imageHover={tayo2}
                 alt={'Tayo Adetola'}
                 role={'Designer'}
+                link={'https://www.linkedin.com/in/tayoadetola/'}
             />
         </WhoWeAreStyle>
     )

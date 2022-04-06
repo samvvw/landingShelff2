@@ -45,7 +45,7 @@ const TeamMemberCardComponent = (props) => (
             <img id="hover-image" src={props.imageHover} alt={props.alt2} />
             <div className="team-member-role-wrapper">
                 <span>{props.role}</span>
-                <a href={props.link}>
+                <a href={props.link} target="_blank" rel="noreferrer">
                     <i class="fa fa-linkedin"></i>
                 </a>
             </div>
@@ -85,6 +85,7 @@ export const TeamMemberCardStyle = styled(TeamMemberCardComponent)`
                 padding: 0.2rem 0.75rem;
             }
             a {
+                text-decoration: none;
                 display: flex;
                 align-items: center;
                 justify-content: center;
