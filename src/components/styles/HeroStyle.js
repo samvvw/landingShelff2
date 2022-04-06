@@ -17,8 +17,8 @@ export const HeroStyle = styled(HeroComponent).attrs({
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
     margin-top: 4rem;
+
     img {
         position: absolute;
         display: block;
@@ -49,7 +49,6 @@ export const HeroStyle = styled(HeroComponent).attrs({
         p {
             font-size: 1.25rem;
             line-height: 2rem;
-            letter-spacing: -0.06rem;
             width: 28.44rem;
             height: 6rem;
             font-weight: 300;
@@ -58,7 +57,6 @@ export const HeroStyle = styled(HeroComponent).attrs({
         a {
             font-size: 1rem;
             line-height: 2rem;
-            letter-spacing: -0.06rem;
             text-decoration: none;
             display: block;
             background: ${({ theme }) => theme.primaryColour.crimson};
