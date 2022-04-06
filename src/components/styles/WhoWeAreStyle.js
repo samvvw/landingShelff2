@@ -29,6 +29,7 @@ export const WhoWeAreStyle = styled(WhoWeAreComponent)`
         }
     }
     .team-container {
+        padding: 0 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center;
@@ -109,5 +110,6 @@ export const TeamMemberCardStyle = styled(TeamMemberCardComponent)`
     }
     .team-member-name-wrapper {
         font-size: 2.25rem;
+        width: 80%;
     }
 `

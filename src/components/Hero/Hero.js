@@ -12,7 +12,7 @@ const Hero = () => {
                 of your food inventory. Our goal is to make you never waste food
                 again.
             </p>
-            <a href="#">Learn More</a>
+            <a href="#about">Learn More</a>
         </HeroStyle>
     )
 }

@@ -44,7 +44,7 @@ const Features = () => {
             </FeatureSection>
             <FeatureSection
                 description={
-                    'Entering data manually takes too much time and effort. Let our barcode scanning functionality simplify the process for you. Every item is sorted instantly into categories for easy organization when scanned'
+                    'Entering data manually takes too much time and effort. Let our barcode scanning functionality simplify the process for you. Every item is sorted instantly into categories for easy organization when scanned.'
                 }
                 first={'image'}
                 tag={'BARCODE SCANNER'}
@@ -60,13 +60,12 @@ const Features = () => {
                 }
                 image={!matches ? notificationsDesktop : notificationsMobile}
             >
-                Mitigate food waste with push <span>notification</span>{' '}
-                reminders
+                Mitigate food waste with <span>notification</span> reminders
             </FeatureSection>
             <FutureFeatureSection
                 tag={'FOOD BANK DONATIONS'}
                 description={
-                    "Shelff is more than food inventory tracking. Donate you unwanted food items to one of our community food bank partners. We'll handle the due diligence and take care of that for you."
+                    "Shelff is more than food inventory tracking. Donate your unwanted food items to one of our community food bank partners. We'll handle the due diligence and take care of that for you."
                 }
                 image={!matches ? donationDesktop : donationMobile}
                 alt={'Donations'}
