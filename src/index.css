@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Google Sans';
     font-style: normal;
     font-weight: normal;
@@ -45,7 +45,7 @@
     font-style: italic;
     font-weight: bold;
     src: url('./fonts/GoogleSans-BoldItalic.ttf');
-}
+} */
 
 @font-face {
     font-family: 'Michael';
@@ -90,12 +90,12 @@
     font-weight: 900;
     src: url(./fonts/OpenSans/OpenSans-ExtraBold.ttf);
 }
-
+@import url('http://fonts.cdnfonts.com/css/google-sans');
 body,
 html {
     margin: 0;
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
@@ -112,7 +112,7 @@ html {
 } */
 
 html {
-    scroll-padding-top: 140px; /* height of sticky header */
+    scroll-padding-top: 120px; /* height of sticky header */
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
