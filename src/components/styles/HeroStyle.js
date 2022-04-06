@@ -72,6 +72,7 @@ export const HeroStyle = styled(HeroComponent).attrs({
         }
     }
     @media (max-width: ${(props) => props.theme.layout.tablet}) {
+        height: initial;
         overflow-x: hidden;
         overflow-y: clip;
         img {
