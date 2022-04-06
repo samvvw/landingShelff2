@@ -72,6 +72,8 @@ export const HeroStyle = styled(HeroComponent).attrs({
         }
     }
     @media (max-width: ${(props) => props.theme.layout.tablet}) {
+        overflow-x: hidden;
+        overflow-y: clip;
         img {
             width: 1800px;
             mask: url('data:image/svg+xml;utf8,<svg width="1800" height="100%" viewBox="0 0 723 1038" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H644V580.113L317.664 691.748C267.367 708.954 211.955 702.118 167.349 673.203L0 564.726V0Z" fill="black"/></svg>')
