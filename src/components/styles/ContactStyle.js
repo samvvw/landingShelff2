@@ -77,6 +77,9 @@ export const ContactStyle = styled(ContactComponent).attrs({ id: 'contact' })`
             top: -8rem;
             width: 50%;
         }
+        h2 {
+            font-size: 2.38rem;
+        }
         .footer-cta {
             flex-direction: column;
         }
