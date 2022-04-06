@@ -1,33 +1,41 @@
 import styled from 'styled-components'
 
-const ContactComponent = (props) => (
-    <div {...props}>
-        <img src={props.bg1} alt={'background1'} id="brown-bg" />
-        <img src={props.bg2} alt={'background2'} id="blob" />
-        <h2>{props.title}</h2>
-        {props.form}
+export const ContactWrapper = styled('div')`
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+`
 
-        <div className="footer-cta">
-            <span>COMING SOON TO...</span>
-            <div>
-                <img src={props.googlePLay} alt={'google-play'} />
-                <img src={props.appleStore} alt={'apple-store'} />
+const ContactComponent = (props) => (
+    <ContactWrapper>
+        <div {...props}>
+            <img src={props.bg1} alt={'background1'} id="brown-bg" />
+            <img src={props.bg2} alt={'background2'} id="blob" />
+            <h2>{props.title}</h2>
+            {props.form}
+
+            <div className="footer-cta">
+                <span>COMING SOON TO...</span>
+                <div>
+                    <img src={props.googlePLay} alt={'google-play'} />
+                    <img src={props.appleStore} alt={'apple-store'} />
+                </div>
             </div>
+            <span>{props.note}</span>
         </div>
-        <span>{props.note}</span>
-    </div>
+    </ContactWrapper>
 )
 
 export const ContactStyle = styled(ContactComponent).attrs({ id: 'contact' })`
     margin: 0 auto;
     margin-top: 13rem;
-    position: relative;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 1080px;
+    overflow: hidden;
     #brown-bg {
         position: absolute;
         z-index: -1;
@@ -35,7 +43,7 @@ export const ContactStyle = styled(ContactComponent).attrs({ id: 'contact' })`
     #blob {
         position: absolute;
         z-index: -11;
-        right: -9rem;
+        right: 3rem;
         top: 0;
     }
     h2 {
@@ -74,7 +82,7 @@ export const ContactStyle = styled(ContactComponent).attrs({ id: 'contact' })`
         #blob {
             /* width: 100%; */
             right: 0;
-            top: -8rem;
+            top: 3rem;
             width: 50%;
         }
         h2 {
