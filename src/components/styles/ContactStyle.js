@@ -8,7 +8,7 @@ const ContactComponent = (props) => (
         {props.form}
 
         <div className="footer-cta">
-            <span>Coming Soon to...</span>
+            <span>COMING SOON TO...</span>
             <div>
                 <img src={props.googlePLay} alt={'google-play'} />
                 <img src={props.appleStore} alt={'apple-store'} />

@@ -100,6 +100,9 @@ html {
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 }
+/* * {
+    border: 1px solid red;
+} */
 #root {
     height: 100%;
 }
@@ -112,7 +115,7 @@ html {
 } */
 
 html {
-    scroll-padding-top: 120px; /* height of sticky header */
+    scroll-padding-top: 120px;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -7,7 +7,7 @@ import { ReactComponent as CloseIcon } from '../../assets/close.svg'
 export const HeaderWrapper = styled.div`
     width: 100%;
     position: fixed;
-    z-index: 19;
+    z-index: 190;
     top: 0;
     background-color: #fff;
     @media (max-width: ${({ theme }) => theme.layout.tablet}) {
@@ -97,7 +97,7 @@ export const Drawer = styled(DrawerComponent)`
         display: none;
     }
     position: fixed;
-    top: -100%;
+    top: -120%;
     left: 0;
     width: 100%;
     height: 100%;
