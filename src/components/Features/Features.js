@@ -51,7 +51,7 @@ const Features = () => {
                 image={!matches ? barCodeScannerDesktop : barCodeScannerMobile}
                 alt={'Barcode Scanner'}
             >
-                Long food items <span>effortlessly</span>
+                Log food items <span>effortlessly</span>
             </FeatureSection>
             <FeatureSection
                 tag={'NOTIFICATIONS'}
