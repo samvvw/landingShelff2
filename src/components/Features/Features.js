@@ -35,7 +35,7 @@ const Features = () => {
             <FeatureSection
                 tag={'THIS IS SHELFF'}
                 description={
-                    'Shelff shows you the information you need, and when you need it, so you one less thing to worry about.'
+                    'Shelff shows you the information you need, and when you need it, so you have one less thing to worry about.'
                 }
                 image={!matches ? thisIsShelffDesktop : thisIsShelffMobile}
                 alt={'This is Shelff'}
