@@ -98,11 +98,22 @@ html {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
 }
 #root {
     height: 100%;
 }
+/* [id]::before {
+    content: '';
+    display: block;
+    height: 175px;
+    margin-top: -75px;
+    visibility: hidden;
+} */
 
+html {
+    scroll-padding-top: 140px; /* height of sticky header */
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;

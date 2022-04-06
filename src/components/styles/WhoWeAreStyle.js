@@ -6,14 +6,35 @@ const WhoWeAreComponent = (props) => (
             <span>{props.tag}</span>
         </div>
         <h2>{props.title}</h2>
-        {props.children}
+        <div className="team-container">{props.children}</div>
     </div>
 )
 
 export const WhoWeAreStyle = styled(WhoWeAreComponent)`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    max-width: 1080px;
+    .team-tag span {
+        margin: 0 1.5rem;
+        color: ${(props) => props.theme.primaryColour.crimson};
+        background-color: ${(props) => props.theme.secondaryColour.chip};
+        padding: 0.5rem 1rem;
+    }
+    h2 {
+        padding: 0 1.5rem;
+        font-size: 3rem;
+        span {
+            color: ${(props) => props.theme.primaryColour.crimson};
+            font-family: 'Michael';
+        }
+    }
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 `
 
 const TeamMemberCardComponent = (props) => (

@@ -7,16 +7,18 @@ import { theme } from './theme/theme'
 import Features from './components/Features/Features'
 import HowItWorks from './components/HowItWorks/HowItWorks'
 import WhoWeAre from './components/WhoWeAre/WhoWeAre'
+import Contact from './components/Contact/Contact'
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
             <Layout>
                 <Header />
-                <Hero />
-                <Features />
-                <HowItWorks />
-                <WhoWeAre />
+                <Hero id="home" />
+                <Features id="features" />
+                <HowItWorks id="how-it-works" />
+                <WhoWeAre id="who-we-are" />
+                <Contact />
             </Layout>
         </ThemeProvider>
     )

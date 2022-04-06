@@ -33,10 +33,18 @@ const Header = () => {
 
                 {!matches ? (
                     <HeaderLinks>
-                        <li>Home</li>
-                        <li>Features</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#how-it-works">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </HeaderLinks>
                 ) : (
                     <>
@@ -45,14 +53,23 @@ const Header = () => {
                                 setIsOpen((prev) => (prev ? false : true))
                             }
                         />
-                        {isOpen && (
-                            <Drawer onClose={() => setIsOpen(false)}>
-                                <li>Home</li>
-                                <li>Features</li>
-                                <li>About</li>
-                                <li>Contact</li>
-                            </Drawer>
-                        )}
+                        <Drawer
+                            isOpen={isOpen}
+                            onClose={() => setIsOpen(false)}
+                        >
+                            <li onClick={() => setIsOpen(false)}>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li onClick={() => setIsOpen(false)}>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li onClick={() => setIsOpen(false)}>
+                                <a href="#how-it-works">About</a>
+                            </li>
+                            <li onClick={() => setIsOpen(false)}>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </Drawer>
                     </>
                 )}
             </HeaderStyle>

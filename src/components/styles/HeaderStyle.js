@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { ReactComponent as LogoIcon } from '../../assets/logo.svg'
 import { ReactComponent as LogoText } from '../../assets/logoText.svg'
 import { ReactComponent as HamburgerIcon } from '../../assets/hamburger.svg'
@@ -6,9 +6,14 @@ import { ReactComponent as CloseIcon } from '../../assets/close.svg'
 
 export const HeaderWrapper = styled.div`
     width: 100%;
+    position: fixed;
+    z-index: 19;
+    top: 0;
+    background-color: #fff;
     @media (max-width: ${({ theme }) => theme.layout.tablet}) {
-        position: fixed;
-        z-index: 19;
+    }
+    li {
+        cursor: pointer;
     }
 `
 
@@ -53,6 +58,10 @@ export const HeaderLinks = styled(HeaderLinksComponent)`
         li {
             font-size: 0.88rem;
             font-weight: bold;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 `
@@ -63,6 +72,7 @@ const HamburgerComponent = (props) => (
 )
 
 export const HamburgerButton = styled(HamburgerComponent)`
+    cursor: pointer;
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
@@ -71,6 +81,9 @@ export const HamburgerButton = styled(HamburgerComponent)`
     align-items: center;
     justify-content: center;
     background-color: white;
+    &:hover {
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.06);
+    }
 `
 const DrawerComponent = (props) => (
     <div {...props}>
@@ -80,8 +93,11 @@ const DrawerComponent = (props) => (
 )
 
 export const Drawer = styled(DrawerComponent)`
+    @media (min-width: ${({ theme }) => theme.layout.tablet}) {
+        display: none;
+    }
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -108,6 +124,12 @@ export const Drawer = styled(DrawerComponent)`
 
         li {
             font-weight: bold;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
+    transition: top 0.3s ease-in-out;
+    ${(props) => props.isOpen && 'top: 0;'}
 `

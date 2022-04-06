@@ -17,7 +17,14 @@ import tayo2 from '../../images/TeamPics/tayo_adetola_designer_2.webp'
 
 const WhoWeAre = () => {
     return (
-        <WhoWeAreStyle>
+        <WhoWeAreStyle
+            tag="WHO WE ARE"
+            title={
+                <>
+                    A <span>team</span> of design and technology prowess
+                </>
+            }
+        >
             <TeamMemberCard
                 name={'Alejandra Hernandez'}
                 image={alejandra}

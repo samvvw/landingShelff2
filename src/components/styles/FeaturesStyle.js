@@ -50,7 +50,9 @@ const FeatureSectionComponent = (props) => (
     </div>
 )
 
-export const FeatureSectionStyle = styled(FeatureSectionComponent)`
+export const FeatureSectionStyle = styled(FeatureSectionComponent).attrs({
+    id: 'features',
+})`
     margin: 0 auto;
     max-width: 1080px;
     padding: 0 1.5rem;

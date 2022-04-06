@@ -7,7 +7,9 @@ const HowItWorksComponent = (props) => (
     </div>
 )
 
-export const HowItWorksStyle = styled(HowItWorksComponent)`
+export const HowItWorksStyle = styled(HowItWorksComponent).attrs({
+    id: 'how-it-works',
+})`
     position: relative;
 
     display: flex;
@@ -18,6 +20,7 @@ export const HowItWorksStyle = styled(HowItWorksComponent)`
         flex: 1;
         max-width: 90%;
         padding: 0 1.5rem;
+        max-width: 1080px;
     }
     iframe {
         width: 100%;

@@ -7,14 +7,18 @@ const HeroComponent = (props) => (
     </div>
 )
 
-export const HeroStyle = styled(HeroComponent)`
+export const HeroStyle = styled(HeroComponent).attrs({
+    // id: 'home',
+})`
     position: relative;
     overflow-x: hidden;
+    overflow-y: clip;
     height: 62.63rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
+    margin-top: 4rem;
     img {
         position: absolute;
         display: block;
