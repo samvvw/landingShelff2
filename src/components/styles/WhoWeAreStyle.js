@@ -19,6 +19,7 @@ export const WhoWeAreStyle = styled(WhoWeAreComponent)`
         color: ${(props) => props.theme.primaryColour.crimson};
         background-color: ${(props) => props.theme.secondaryColour.chip};
         padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
     }
     h2 {
         padding: 0 1.5rem;
